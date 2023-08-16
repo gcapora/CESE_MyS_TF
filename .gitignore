@@ -1,12 +1,12 @@
 # Vivado generated files
 *.cache/
-*.hw/
-*.ip_user_files/
-*.runs/
+#*.hw/
+#*.ip_user_files/
+#*.runs/
 *.sim/
-*.srcs/
-*.xpr
-*.log
+#*.srcs/
+#*.xpr
+#*.log
 *.jou
 webtalk.*
 *.backup*
@@ -29,7 +29,7 @@ sim/
 *.sdk/
 
 # Generated reports and logs
-report_*.txt
+#report_*.txt
 usage_statistics_webtalk.*
 
 # Other temporary files

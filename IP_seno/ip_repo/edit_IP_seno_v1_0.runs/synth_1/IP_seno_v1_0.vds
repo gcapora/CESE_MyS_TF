@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Aug 16 06:20:48 2023
+# Process ID: 16844
+# Current directory: c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/edit_IP_seno_v1_0.runs/synth_1
+# Command line: vivado.exe -log IP_seno_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IP_seno_v1_0.tcl
+# Log file: c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/edit_IP_seno_v1_0.runs/synth_1/IP_seno_v1_0.vds
+# Journal file: c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/edit_IP_seno_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IP_seno_v1_0.tcl -notrace
+Command: synth_design -top IP_seno_v1_0 -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10980 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 351.105 ; gain = 98.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'IP_seno_v1_0' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0.vhd:50]
+	Parameter C_S_BITS_DATO bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_BITS_DATO bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'IP_seno_v1_0_S_AXI' declared at 'c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:5' bound to instance 'IP_seno_v1_0_S_AXI_inst' of component 'IP_seno_v1_0_S_AXI' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'IP_seno_v1_0_S_AXI' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:88]
+	Parameter C_S_BITS_DATO bound to: 12 - type: integer 
+	Parameter C_S_BITS_INCREMENTO bound to: 25 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:250]
+INFO: [Synth 8-226] default block is never used [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:380]
+	Parameter BITS_DATO bound to: 12 - type: integer 
+	Parameter BITS_MUESTRAS bound to: 10 - type: integer 
+	Parameter BITS_INCREMENTO bound to: 25 - type: integer 
+	Parameter BITS_CONTADOR bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'seno' declared at 'c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/seno.vhd:11' bound to instance 'inst_seno' of component 'seno' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:413]
+INFO: [Synth 8-638] synthesizing module 'seno' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/seno.vhd:30]
+	Parameter BITS_DATO bound to: 12 - type: integer 
+	Parameter BITS_MUESTRAS bound to: 10 - type: integer 
+	Parameter BITS_INCREMENTO bound to: 25 - type: integer 
+	Parameter BITS_CONTADOR bound to: 30 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'acumulador' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/acumulador.vhd:26]
+	Parameter N_BITS_MUESTRAS bound to: 10 - type: integer 
+	Parameter J_BITS_INCREMENTO bound to: 25 - type: integer 
+	Parameter C_BITS_CONTADOR bound to: 30 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'acumulador' (1#1) [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/acumulador.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'cfa_seno' [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/cfa_seno.vhd:24]
+	Parameter Q_BITS_DATO bound to: 12 - type: integer 
+	Parameter N_BITS_MUESTRAS bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cfa_seno' (2#1) [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/cfa_seno.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'seno' (3#1) [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/src/seno.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'IP_seno_v1_0_S_AXI' (4#1) [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0_S_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'IP_seno_v1_0' (5#1) [c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/IP_seno_1.0/hdl/IP_seno_v1_0.vhd:50]
+WARNING: [Synth 8-3331] design IP_seno_v1_0_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design IP_seno_v1_0_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design IP_seno_v1_0_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design IP_seno_v1_0_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design IP_seno_v1_0_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design IP_seno_v1_0_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 406.477 ; gain = 153.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 406.477 ; gain = 153.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 406.477 ; gain = 153.812
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 406.477 ; gain = 153.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cfa_seno 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module IP_seno_v1_0_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design IP_seno_v1_0 has unconnected port s_axi_awprot[2]
+WARNING: [Synth 8-3331] design IP_seno_v1_0 has unconnected port s_axi_awprot[1]
+WARNING: [Synth 8-3331] design IP_seno_v1_0 has unconnected port s_axi_awprot[0]
+WARNING: [Synth 8-3331] design IP_seno_v1_0 has unconnected port s_axi_arprot[2]
+WARNING: [Synth 8-3331] design IP_seno_v1_0 has unconnected port s_axi_arprot[1]
+WARNING: [Synth 8-3331] design IP_seno_v1_0 has unconnected port s_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\IP_seno_v1_0_S_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'IP_seno_v1_0_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'IP_seno_v1_0_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IP_seno_v1_0_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'IP_seno_v1_0_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'IP_seno_v1_0_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IP_seno_v1_0_S_AXI_inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/aw_en_reg) is unused and will be removed from module IP_seno_v1_0.
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module IP_seno_v1_0.
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module IP_seno_v1_0.
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module IP_seno_v1_0.
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module IP_seno_v1_0.
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module IP_seno_v1_0.
+WARNING: [Synth 8-3332] Sequential element (IP_seno_v1_0_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module IP_seno_v1_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+---------------------------------------------------+---------------+----------------+
+|Module Name  | RTL Object                                        | Depth x Width | Implemented As | 
++-------------+---------------------------------------------------+---------------+----------------+
+|cfa_seno     | tdb_seno[0]                                       | 1024x12       | LUT            | 
+|IP_seno_v1_0 | IP_seno_v1_0_S_AXI_inst/inst_seno/CFA/tdb_seno[0] | 1024x12       | LUT            | 
++-------------+---------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT2   |    26|
+|5     |LUT3   |     3|
+|6     |LUT4   |    19|
+|7     |LUT5   |    16|
+|8     |LUT6   |   194|
+|9     |MUXF7  |    60|
+|10    |MUXF8  |    15|
+|11    |FDCE   |    30|
+|12    |FDRE   |   167|
+|13    |FDSE   |     2|
+|14    |IBUF   |    47|
+|15    |OBUF   |    53|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |   642|
+|2     |  IP_seno_v1_0_S_AXI_inst |IP_seno_v1_0_S_AXI |   541|
+|3     |    inst_seno             |seno               |   316|
+|4     |      AF                  |acumulador         |   304|
+|5     |      CFA                 |cfa_seno           |    12|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 576.289 ; gain = 323.625
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 626.730 ; gain = 387.367
+INFO: [Common 17-1381] The checkpoint 'c:/Users/gcapo/Documents/CESE/05_MyS/TF/IP_seno/ip_repo/edit_IP_seno_v1_0.runs/synth_1/IP_seno_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file IP_seno_v1_0_utilization_synth.rpt -pb IP_seno_v1_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 626.730 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 16 06:21:17 2023...

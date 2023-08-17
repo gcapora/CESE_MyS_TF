@@ -1,0 +1,33 @@
+/****************************************************************************************
+ * Archivo:  generador_seno.c
+ * Breve:    Control de CLP generador de señal senoidal mediante código en procesador.
+ *
+ ***************************************************************************************/
+
+/*** Librerías *************************************************************************/
+#include "xparameters.h"
+#include "xil_io.h"
+#include "IP_seno.h"
+
+/*** Macros ****************************************************************************/
+#define RESETEAR	0x80000000
+#define HABILITAR   0x40000000
+
+//====================================================
+
+int main (void) {
+
+	int res;
+	int opA = 1256;
+	int opB = 800;
+
+    xil_printf("-- Inicio del programa para validar el uso de IP cores propios --\r\n");
+
+    IP_SENO_mWriteReg(XPAR_SUM_IP_0_S_AXI_BASEADDR, SUM_IP_S_AXI_SLV_REG0_OFFSET, opA);
+    SUM_IP_mWriteReg(XPAR_SUM_IP_0_S_AXI_BASEADDR, SUM_IP_S_AXI_SLV_REG1_OFFSET, opB);
+    res = SUM_IP_mReadReg(XPAR_SUM_IP_0_S_AXI_BASEADDR, SUM_IP_S_AXI_SLV_REG2_OFFSET);
+
+    xil_printf("Cuenta: %d + %d = %d\r\n", opA, opB, res);
+
+
+}

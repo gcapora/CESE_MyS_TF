@@ -1,0 +1,98 @@
+03:51:06 INFO  : Registering command handlers for SDK TCF services
+03:51:07 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\gcapo\Documents\CESE\05_MyS\Labs\sum\sum.sdk\temp_xsdb_launch_script.tcl
+03:51:09 INFO  : XSCT server has started successfully.
+03:51:09 INFO  : Successfully done setting XSCT server connection channel  
+03:51:10 INFO  : Successfully done setting SDK workspace  
+03:51:10 INFO  : Processing command line option -hwspec C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper.hdf.
+04:01:21 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+04:01:26 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+04:01:44 INFO  : Connected through redirection to target on host 'lseserver.ddns.net' and port '3121'.
+04:01:45 WARN  : SDK version '2018.1' doesn't match hw_server version '2022.1'. Some debug features may not work.
+04:02:09 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+04:02:09 INFO  : 'jtag frequency' command is executed.
+04:02:09 INFO  : Sourcing of 'C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:02:12 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"". available targets:
+  1  DAP (APB AP transaction error, DAP status 0x30000021)
+  2  xc7z010
+     3  Legacy Debug Hub
+  4  DAP (AHB AP transaction error, DAP status 0x30000021)
+  5  xc7z010
+     6  Legacy Debug Hub
+04:02:12 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:lseserver.ddns.net:3121]
+source C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+----------------End of Script----------------
+
+04:03:04 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+04:03:08 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+04:03:14 INFO  : Connected through redirection to target on host 'lseserver.ddns.net' and port '3121'.
+04:03:15 WARN  : SDK version '2018.1' doesn't match hw_server version '2022.1'. Some debug features may not work.
+04:03:16 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+04:03:16 INFO  : 'jtag frequency' command is executed.
+04:03:16 INFO  : Sourcing of 'C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:03:19 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"". available targets:
+  1  DAP (APB AP transaction error, DAP status 0x30000021)
+  2  xc7z010
+     3  Legacy Debug Hub
+  4  DAP (AHB AP transaction error, DAP status 0x30000021)
+  5  xc7z010
+     6  Legacy Debug Hub
+04:03:19 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:lseserver.ddns.net:3121]
+source C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+----------------End of Script----------------
+
+04:14:23 INFO  : Registering command handlers for SDK TCF services
+04:14:23 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\gcapo\Documents\CESE\05_MyS\Labs\sum\sum.sdk\temp_xsdb_launch_script.tcl
+04:14:27 INFO  : XSCT server has started successfully.
+04:14:27 INFO  : Successfully done setting XSCT server connection channel  
+04:14:27 INFO  : Successfully done setting SDK workspace  
+04:14:27 INFO  : Processing command line option -hwspec C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper.hdf.
+04:14:27 INFO  : Checking for hwspec changes in the project sistema_wrapper_hw_platform_0.
+04:16:34 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+04:16:37 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+04:16:42 INFO  : Connected through redirection to target on host 'lseserver.ddns.net' and port '3121'.
+04:16:42 WARN  : SDK version '2018.1' doesn't match hw_server version '2022.1'. Some debug features may not work.
+04:16:44 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+04:16:44 INFO  : 'jtag frequency' command is executed.
+04:16:44 INFO  : Sourcing of 'C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:16:47 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"". available targets:
+  1  DAP (APB AP transaction error, DAP status 0x30000021)
+  2  xc7z010
+     3  Legacy Debug Hub
+  4  DAP (AHB AP transaction error, DAP status 0x30000021)
+  5  xc7z010
+     6  Legacy Debug Hub
+04:16:47 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:lseserver.ddns.net:3121]
+source C:/Users/gcapo/Documents/CESE/05_MyS/Labs/sum/sum.sdk/sistema_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+----------------End of Script----------------
+
+06:55:25 INFO  : Registering command handlers for SDK TCF services
+06:55:26 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\gcapo\Documents\CESE\05_MyS\TF\senial_seno_ila\senial_seno_ila.sdk\temp_xsdb_launch_script.tcl
+06:55:29 INFO  : XSCT server has started successfully.
+06:55:30 INFO  : Successfully done setting XSCT server connection channel  
+06:55:30 INFO  : Successfully done setting SDK workspace  
+06:55:30 INFO  : Processing command line option -hwspec C:/Users/gcapo/Documents/CESE/05_MyS/TF/senial_seno_ila/senial_seno_ila.sdk/sistema_wrapper.hdf.
+12:40:27 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+12:40:32 INFO  : Connected to target on host 'lseserver.ddns.net' and port '3121'.
+12:40:42 INFO  : Connected through redirection to target on host 'lseserver.ddns.net' and port '3121'.
+12:40:42 WARN  : SDK version '2018.1' doesn't match hw_server version '2022.1'. Some debug features may not work.
+12:40:44 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+12:40:44 INFO  : 'jtag frequency' command is executed.
+12:40:44 INFO  : Sourcing of 'C:/Users/gcapo/Documents/CESE/05_MyS/TF/senial_seno_ila/senial_seno_ila.sdk/sistema_wrapper_hw_platform_1/ps7_init.tcl' is done.
+12:40:47 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"". available targets:
+  1  DAP (APB AP transaction error, DAP status 0x30000021)
+  2  xc7z010
+     3  Legacy Debug Hub
+  4  DAP (AHB AP transaction error, DAP status 0x30000021)
+  5  xc7z010
+12:40:47 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:lseserver.ddns.net:3121]
+source C:/Users/gcapo/Documents/CESE/05_MyS/TF/senial_seno_ila/senial_seno_ila.sdk/sistema_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+----------------End of Script----------------
+

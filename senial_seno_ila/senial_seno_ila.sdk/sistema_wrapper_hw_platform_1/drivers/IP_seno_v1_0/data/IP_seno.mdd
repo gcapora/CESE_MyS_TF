@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER IP_seno
+	OPTION supported_peripherals = (IP_seno);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = IP_seno;
+END DRIVER

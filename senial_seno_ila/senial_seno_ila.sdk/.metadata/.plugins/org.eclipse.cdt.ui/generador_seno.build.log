@@ -1,0 +1,8 @@
+12:38:38 **** Incremental Build of configuration Debug for project generador_seno ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+
+12:38:38 Build Finished (took 262ms)
+

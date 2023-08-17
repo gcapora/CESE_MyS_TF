@@ -4,19 +4,12 @@
 *.jou
 webtalk.*
 *.backup*
-
-# Vivado project state file
 *.dcp
-
-# Vivado generated Tcl scripts
 *.tcl
 
 # Compiled bitstream
 #*.bit
 *.bin
-
-# Compiled SDK files (if using SDK)
-*.sdk/
 
 # Generated reports and logs
 usage_statistics_webtalk.*

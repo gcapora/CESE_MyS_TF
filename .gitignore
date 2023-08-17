@@ -17,3 +17,6 @@ usage_statistics_webtalk.*
 # Other temporary files
 *.swp
 .DS_Store
+
+# VSCode
+*.vscode/

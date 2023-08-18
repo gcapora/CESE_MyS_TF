@@ -1,10 +1,10 @@
 /****************************************************************************************
  * Archivo:  generador_seno.c
- * Breve:    Control de CLP generador de se�al senoidal mediante c�digo en procesador.
+ * Breve:    Control de CLP generador de senial senoidal mediante codigo en procesador.
  *
  ***************************************************************************************/
 
-/*** Librer�as *************************************************************************/
+/*** Librerias *************************************************************************/
 
 #include "xparameters.h"
 #include "xil_io.h"
@@ -14,10 +14,10 @@
 
 #define RESETEAR	     0x80000000   // Bit para resetar el contador
 #define HABILITAR        0x40000000   // Bit para habilitar el contador
-#define MASCARA_CONTADOR 0x1FFFFFF    // M�scara que coresponde al contador
+#define MASCARA_CONTADOR 0x1FFFFFF    // Mascara que coresponde al contador
 #define MAXIMA_CUENTA    MASCARA_CONTADOR
 #define CUENTA_ENTERA    0x100000     // F0 = Freloj / 1024
-                                      // Corresponde a la máxima frecuencia sin degradar señal
+                                      // Es la maxima frecuencia sin degradar senial
 
 #define MEGA             1000000
 #define FREC_RELOJ       100 * MEGA   // Frecuencia de reloj

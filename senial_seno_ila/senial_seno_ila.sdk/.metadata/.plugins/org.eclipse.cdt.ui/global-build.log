@@ -1,4 +1,9 @@
-12:38:38 **** Incremental Build of configuration Debug for project generador_seno ****
+21:20:38 **** Incremental Build of configuration Debug for project Hola ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+21:22:38 **** Auto Build of configuration Debug for project generador_seno ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

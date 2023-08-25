@@ -391,3 +391,10 @@ configparams force-mem-access 0
 19:34:29 INFO  : Memory regions updated for context APU
 19:34:29 INFO  : Launch script is exported to file 'C:\Users\gcapo\Documents\CESE\05_MyS\TF\senial_seno_ila\senial_seno_ila.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_servidor_cese.tcl'
 19:35:57 INFO  : Disconnected from the channel tcfchan#3.
+20:04:16 INFO  : Registering command handlers for SDK TCF services
+20:04:17 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\gcapo\Documents\CESE\05_MyS\TF\senial_seno_ila\senial_seno_ila.sdk\temp_xsdb_launch_script.tcl
+20:04:22 INFO  : XSCT server has started successfully.
+20:04:22 INFO  : Successfully done setting XSCT server connection channel  
+20:04:23 INFO  : Successfully done setting SDK workspace  
+20:04:23 INFO  : Processing command line option -hwspec C:/Users/gcapo/Documents/CESE/05_MyS/TF/senial_seno_ila/senial_seno_ila.sdk/sistema_wrapper.hdf.
+20:04:23 INFO  : Checking for hwspec changes in the project sistema_wrapper_hw_platform_1.
